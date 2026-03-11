@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$.ajax({url: "ajaxsucces.txt", success: function(result){
+$("#newid").html(result);
+}});
+});
+});
+</script>
+</head>
+<body>
+<div id="newid"><h2>Welcome to Jqeury</h2></div>
+<button>New Button</button>
+</body>
+</html>
